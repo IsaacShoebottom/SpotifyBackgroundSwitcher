@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Changes the background of Spotify playlists and albums in a rainbow pattern
-// @author       You
+// @author       Isaac Shoebottom
 // @match        https://open.spotify.com/playlist/*
 // @match        https://open.spotify.com/album/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
