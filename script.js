@@ -4,6 +4,8 @@
 // @version      0.0.1
 // @description  Changes the background of Spotify playlists and albums in a rainbow pattern
 // @author       Isaac Shoebottom
+// @updateURL    https://raw.githubusercontent.com/Glaceon575/SpotifyBackgroundSwitcher/master/script.js
+// @downloadURL  https://raw.githubusercontent.com/Glaceon575/SpotifyBackgroundSwitcher/master/script.js
 // @match        https://open.spotify.com/playlist/*
 // @match        https://open.spotify.com/album/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
@@ -15,11 +17,13 @@
 
 waitForKeyElements(".xYgjMpAjE5XT05aRIezb", changeBackground);
 
+const timer = 50 //in milliseconds
+
 let r1, g1, b1, r2, b2, g2
 let topIntensityCutoff = 235
 let topDarknessCutoff = 75
 
-let difference = 60
+const difference = 60 //delta between the top and bottom
 
 let bottomIntensityCutoff = topIntensityCutoff - difference
 let bottomDarknessCutoff = topDarknessCutoff - difference
@@ -50,7 +54,7 @@ function changeBackground() {
     g2 = bottomDarknessCutoff;
     b2 = bottomDarknessCutoff;
 
-    setInterval(changeColor, 30, bg);
+    setInterval(changeColor, timer, bg);
 }
 
 function changeColor(bg) {
