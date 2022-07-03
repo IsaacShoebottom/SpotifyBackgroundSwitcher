@@ -2,7 +2,7 @@
 // @name         Spotify Background Changer
 // @namespace    http://tampermonkey.net/
 // @source       https://github.com/Glaceon575/SpotifyBackgroundSwitcher
-// @version      0.1.3
+// @version      0.1.4
 // @description  Changes the background of Spotify playlists and albums in a rainbow pattern
 // @author       Isaac Shoebottom
 // @updateURL    https://raw.githubusercontent.com/Glaceon575/SpotifyBackgroundSwitcher/master/script.js
@@ -47,13 +47,14 @@ function changeColor() {
 
 
 function probeBackground() {
-    console.log("Probing for background");
+    console.log("Begin probing for background");
     setInterval(() => {
         const newBackground = document.querySelector(selector);
         if (!newBackground) {
             return;
         }
         if (newBackground !== background) {
+            console.log("Spotify background changed")
             clearInterval(colorInterval);
             colorInterval = setInterval(changeColor, timer)
             background = newBackground;
