@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Spotify Rainbow Background
+// @name         Spotify Background Changer
 // @namespace    http://tampermonkey.net/
 // @source       https://github.com/Glaceon575/SpotifyBackgroundSwitcher
 // @version      0.1.0
