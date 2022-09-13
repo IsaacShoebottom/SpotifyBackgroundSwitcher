@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Spotify Background Changer
 // @namespace    http://tampermonkey.net/
-// @source       https://github.com/Glaceon575/SpotifyBackgroundSwitcher
+// @source       https://github.com/IsaacShoebottom/SpotifyBackgroundSwitcher
 // @version      0.1.5
 // @description  Changes the background of Spotify playlists and albums in a rainbow pattern
 // @author       Isaac Shoebottom
